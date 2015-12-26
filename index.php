@@ -3,8 +3,16 @@
 require 'config.php';
 require 'helpers.php';
 
-$name = 'Daniel';
-$secret = 'Algo secreto';
-$twitter = '@danielromeroauk';
+$url = $_GET['url'];
 
-view('view', compact('name', 'twitter'));
+// index.php?url=home
+if ($url == 'home') {
+    require "controllers/$url.php";
+}
+// index.php?url=contacto
+elseif ($url == 'contacto') {
+    require "controllers/$url.php";
+} else {
+    header('HTTP/1.0 404 Not Found');
+    require "controllers/404.php";
+}

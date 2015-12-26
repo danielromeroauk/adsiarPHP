@@ -4,5 +4,5 @@ function view($template, $vars = array())
 {
   extract($vars);
 
-  require "$template.php";
+  require "views/$template.tpl.php";
 }
