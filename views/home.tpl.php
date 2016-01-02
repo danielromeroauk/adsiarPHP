@@ -5,9 +5,6 @@
   <title>adsiarPHP</title>
 </head>
 <body>
-  <h1><?= $name ?></h1>
-  <p>
-    Twitter: <?= $twitter ?>
-  </p>
+  <h1><?= $titulo ?></h1>
 </body>
 </html>

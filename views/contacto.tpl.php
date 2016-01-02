@@ -5,6 +5,11 @@
     <title>Contacto</title>
 </head>
 <body>
-    <h1>Página de contacto</h1>
+    <h1>Contacto</h1>
+    <h2>
+        <a href="<?= $web ?>">
+            <?= $web ?>
+        </a>
+    </h2>
 </body>
 </html>

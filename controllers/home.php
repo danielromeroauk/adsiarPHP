@@ -1,7 +1,5 @@
 <?php
 
-$name = 'Daniel';
-$secret = 'Algo secreto';
-$twitter = '@danielromeroauk';
+$titulo = 'Inicio';
 
-view('home', compact('name', 'twitter'));
+view('home', compact('titulo'));

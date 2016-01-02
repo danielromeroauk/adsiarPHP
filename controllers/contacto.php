@@ -1,3 +1,5 @@
 <?php
 
-view('contacto');
+$web = 'http://adsiar.com';
+
+view('contacto', compact('web'));
