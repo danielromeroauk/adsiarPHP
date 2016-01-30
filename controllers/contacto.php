@@ -1,5 +1,11 @@
 <?php
 
+require APP_PATH . '/models/Contact.php';
+
 $web = 'http://adsiar.com';
 
-view('contacto', compact('web'));
+$contactTable = new Contact();
+
+$contacts = $contactTable->all();
+
+view('contacto', compact('web', 'contacts'));

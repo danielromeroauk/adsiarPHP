@@ -11,5 +11,11 @@
             <?= $web ?>
         </a>
     </h2>
+
+    <?php foreach($contacts as $contact): ?>
+        <p>
+            <?= $contact['fullname'] ?>
+        </p>
+    <?php endforeach; ?>
 </body>
 </html>
